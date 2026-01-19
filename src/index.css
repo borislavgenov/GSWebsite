@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 200 20% 98%;
+    --foreground: 203 100% 25%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 203 100% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 203 100% 25%;
+
+    --primary: 203 100% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 25% 93%;
+    --secondary-foreground: 203 100% 25%;
+
+    --muted: 200 20% 96%;
+    --muted-foreground: 203 40% 45%;
+
+    --accent: 203 100% 25%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 200 20% 88%;
+    --input: 200 20% 88%;
+    --ring: 203 100% 35%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 200 13% 91%;
+    --sidebar-ring: 203 100% 35%;
+
+    /* Custom colors - Gama Select Blue */
+    --gama-blue: 203 100% 35%;
+    --gama-blue-dark: 203 100% 25%;
+    --gama-blue-light: 203 80% 50%;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
